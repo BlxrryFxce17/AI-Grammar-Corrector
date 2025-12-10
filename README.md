@@ -37,4 +37,61 @@ AI-powered grammar correction tool that helps users fix grammar, spelling, and p
 - An API key for your chosen language model provider (e.g., OpenAI)
 
 ### Installation
+Clone the repository
+git clone https://github.com/BlxrryFxce17/AI-Grammar-Corrector.git
+cd AI-Grammar-Corrector
 
+Create a virtual environment (optional but recommended)
+python -m venv venv
+venv\Scripts\activate # on Windows
+
+source venv/bin/activate # on macOS / Linux
+Install dependencies
+pip install -r requirements.txt
+
+text
+
+Create a `.env` file and add your API key (if you use one):
+
+API_KEY=your_api_key_here
+
+text
+
+### Run the App
+
+> Update the command below based on your framework.
+
+Example for Streamlit
+streamlit run app.py
+
+Example for Flask
+python app.py
+
+text
+
+Then open the shown URL in your browser (for example, `http://localhost:8501` for Streamlit or `http://127.0.0.1:5000` for Flask).
+
+## Project Structure
+
+AI-Grammar-Corrector/
+├─ app.py # Main application file (UI + logic)
+├─ requirements.txt # Python dependencies
+├─ .env.example # Example environment variables file (optional)
+├─ README.md # Project documentation
+└─ assets/ # (Optional) images, screenshots, static files
+
+text
+
+> Adjust this tree to match your actual files (e.g., if you have `templates/`, `static/`, etc.).
+
+## Future Improvements
+
+- Add support for multiple languages.
+- Highlight changes (diff view) between original and corrected text.
+- Add word/character count and readability score.
+- Deploy the app to a cloud platform (e.g., Render, Vercel, or Streamlit Community Cloud).
+
+## License
+
+This project is for learning and personal use.  
+You can add a formal license (MIT, Apache-2.0, etc.) if you plan to open-source it.
